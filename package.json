@@ -1,0 +1,44 @@
+{
+    "author": "Tim Dorr",
+    "dependencies": {},
+    "keywords": [],
+    "name": "tesla-time",
+    "pebble": {
+        "capabilities": [
+            "configurable"
+        ],
+        "displayName": "Tesla Time",
+        "enableMultiJS": false,
+        "messageKeys": {
+            "charging_state": 4,
+            "command": 6,
+            "is_metric": 2,
+            "loading_status": 0,
+            "location": 5,
+            "rated_range": 3,
+            "vehicle_name": 1
+        },
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/icon.28.png",
+                    "menuIcon": true,
+                    "name": "IMAGE_MENU_ICON",
+                    "type": "png"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk"
+        ],
+        "uuid": "deadbeef-beef-4444-8888-123456789abc",
+        "watchapp": {
+            "watchface": false
+        }
+    },
+    "version": "0.4.0"
+}

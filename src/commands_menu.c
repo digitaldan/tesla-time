@@ -133,6 +133,9 @@ static void window_load(Window *window) {
   populate_commands_menu();
 
   commands_menu_layer = simple_menu_layer_create(bounds, window, commands_menu_sections, ARRAY_LENGTH(commands_menu_sections), NULL);
+  #ifdef PBL_COLOR
+  menu_layer_set_highlight_colors(simple_menu_layer_get_menu_layer(commands_menu_layer), MENU_HL_COLOR, GColorWhite);
+  #endif
   layer_add_child(window_layer, simple_menu_layer_get_layer(commands_menu_layer));
 }
 
